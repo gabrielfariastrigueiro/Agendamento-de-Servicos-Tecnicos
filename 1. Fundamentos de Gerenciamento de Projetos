@@ -1,0 +1,20 @@
+1.1 Termo de Abertura do Projeto (Project Charter)
+
+Nome do Projeto	Sistema de Agendamento de Serviços Técnicos (SAST)
+
+Objetivo Principal	Permitir que clientes agendem serviços técnicos e que técnicos gerenciem suas demandas, com avaliação pós-serviço.
+Justificativa	Otimizar o agendamento, reduzir atrasos e melhorar a satisfação do cliente.
+
+Premissas	- Tecnologia web/mobile.
+- Integração com e-mail/SMS.
+- Equipe de 5 desenvolvedores.
+
+1.2 Cronograma (Microsoft Project / Excel)
+Fase	Duração	Início - Fim
+
+Planejamento	2 semanas	01/06/2024	14/06/2024
+
+Desenvolvimento	6 semanas	15/06/2024	26/07/2024
+
+Testes	2 semanas	29/07/2024	09/08/2024
+Implantação	1 semana	12/08/2024	16/08/2024
