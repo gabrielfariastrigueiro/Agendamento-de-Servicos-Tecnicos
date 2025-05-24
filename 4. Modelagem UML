@@ -1,0 +1,48 @@
+4.1 Diagrama de Classes
+
+classDiagram  
+    class Cliente {  
+        +id: int  
+        +nome: string  
+        +solicitarAgendamento()  
+    }  
+    class Técnico {  
+        +especialidade: string  
+        +confirmarAgendamento()  
+    }  
+    class Agendamento {  
+        +dataHora: DateTime  
+        +status: string  
+    }  
+    Cliente "1" -- "*" Agendamento  
+    Técnico "1" -- "*" Agendamento  
+
+4.2 Diagrama de Sequência (Solicitar Agendamento)
+
+sequenceDiagram  
+    Cliente->>Sistema: Solicita agendamento  
+    Sistema->>Técnico: Verifica disponibilidade  
+    Técnico-->>Sistema: Confirma/rejeita  
+    Sistema->>Cliente: Notifica status  
+
+4.3 Diagrama de Atividades (Avaliação de Técnico)
+
+flowchart TD  
+    A[Serviço Concluído] --> B[Cliente recebe link de avaliação]  
+    B --> C{Cliente avalia?}  
+    C -->|Sim| D[Registra nota/comentário]  
+    C -->|Não| E[Envia lembrete após 24h]  
+    D --> F[Atualiza perfil do técnico]  
+
+
+5. Conclusão
+Próximos passos: Validar MVP com as personas e ajustar backlog.
+
+Entregáveis:
+
+Project Charter e cronograma.
+
+Quadro Trello com Sprints.
+
+Diagramas UML em formato editável (.xml/.drawio).
+
