@@ -1,0 +1,40 @@
+3.1 Requisitos
+
+Tipo	ID	Descrição
+Funcionais (RF)	RF01	Cadastro de clientes com e-mail e telefone.
+RF02	Agendamento com seleção de data/hora.
+RF03	Dashboard para técnicos visualizarem agendamentos.
+RF04	Avaliação do serviço (1-5 estrelas + comentário).
+RF05	Notificações por e-mail/SMS.
+Não-Funcionais (RNF)	RNF01	Tempo de resposta < 2 segundos.
+RNF02	Sistema compatível com mobile (iOS/Android).
+RNF03	Backup diário dos dados.
+RNF04	Autenticação via OAuth2.
+RNF05	Suporte a 1.000 usuários simultâneos.
+
+3.2 User Stories
+"Como cliente, eu quero filtrar técnicos por especialidade para agendar o serviço correto."
+
+Critérios de Aceitação: Lista filtrada por "eletricista", "encanador", etc.
+
+"Como técnico, eu quero receber notificações de novos agendamentos para confirmar ou recusar."
+
+Critérios de Aceitação: Notificação via e-mail e app em até 5 minutos.
+
+"Como administrador, eu quero gerar relatórios mensais de serviços para análise de demanda."
+
+Critérios de Aceitação: Exportar em PDF/Excel.
+
+3.3 Priorização MoSCoW
+
+Categoria	Requisitos
+Must	RF01, RF02, RF03, RNF01, RNF03
+Should	RF04, RNF02
+Could	RF05, RNF04
+Won’t	Integração com IoT (ex: monitoramento remoto de equipamentos).
+
+3.4 Personas
+
+Nome	Perfil	Necessidade
+Ana	Cliente	"Quero agendar um conserto rápido pelo celular."
+Carlos	Técnico	"Preciso gerenciar minha agenda em tempo real."
